@@ -1,0 +1,48 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="radio"].visually-hidden,
+input[type="checkbox"].visually-hidden {
+  @include visually-hidden;
+}
+
+#site-top {
+  position: absolute;
+  top: 0;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.is-block-scroll {
+  overflow: hidden;
+
+  @include media-min ($xl) {
+    overflow: unset;
+  }
+}
+
+.indent-reset {
+  @include indent-reset;
+}
+
+.list-reset {
+  @include list-reset;
+}
+
+.btn-reset {
+  @include btn-reset;
+}
+
+.shaked {
+  @include anim(shake, 0.6s);
+}
+
+.custom-scroll {
+  @include custom-scroll;
+}
+
+[data-price-value] {
+  &::after {
+    content: '\20BD';
+  }
+}

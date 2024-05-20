@@ -1,0 +1,150 @@
+.product {
+  padding: 20px 0 60px;
+
+  @include media-min ($lg) {
+    padding: 30px 0 80px;
+  }
+}
+
+.product-gallery {
+  &__slider {
+    margin-bottom: 10px;
+  }
+
+  &__photo {
+    position: relative;
+    height: 0;
+    padding-bottom: 85%;
+    overflow: hidden;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+
+    & img {
+      @include full-size;
+    }
+  }
+
+  &__thumb {
+    overflow: hidden;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    padding: 5px 0;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+
+    & img {
+      width: 100%;
+      max-width: 55px;
+      height: auto;
+    }
+  }
+
+  @include media-min ($md) {
+    max-width: 350px;
+  }
+
+  @include media-min ($xl) {
+    max-width: 460px;
+  }
+}
+
+.product-meta {
+  display: grid;
+  row-gap: 20px;
+
+  &__title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__price {
+    & ins {
+      margin-right: 10px;
+      text-decoration: none;
+    }
+  }
+
+  &__price-val {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.6;
+
+    &--main {
+      font-size: 26px;
+      opacity: 1;
+    }
+  }
+
+  @include media-min ($md) {
+    &__btn {
+      max-width: 300px;
+    }
+  }
+}
+
+.product-params {
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__title-note {
+    font-family: $main-font, Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    & li {
+      display: list-item;
+      margin-right: 7px;
+    }
+  }
+
+  @include media-min ($md) {
+    &__text-field {
+      max-width: 300px;
+    }
+  }
+}
+
+.product-descr {
+  color: #797676;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+
+  &__content {
+    @include crop-text;
+
+    font-family: $alt-font, Arial, Helvetica, sans-serif;
+
+    & ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    & li {
+      display: list-item;
+
+      &::before {
+        content: '\2014';
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+<section class="product">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 mb-4">
+        <div class="product-gallery"
+             id="product-gallery">
+          <div class="product-gallery__slider slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product-gallery__photo">
+                <a href="img/catalog-item.png">
+                  <img class=""
+                       src="img/catalog-item.png"
+                       alt="">
+                </a>
+              </div>
+              <div class="swiper-slide product-gallery__photo">
+                <a href="img/catalog-item.png">
+                  <img class=""
+                       src="img/catalog-item.png"
+                       alt="">
+                </a>
+              </div>
+              <div class="swiper-slide product-gallery__photo">
+                <a href="img/catalog-item.png">
+                  <img class=""
+                       src="img/catalog-item.png"
+                       alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="product-gallery__thumb-slider slider"
+               thumbsSlider>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide product-gallery__thumb">
+                <img src="img/catalog-item.png"
+                     alt="">
+              </div>
+              <div class="swiper-slide product-gallery__thumb">
+                <img src="img/catalog-item.png"
+                     alt="">
+              </div>
+              <div class="swiper-slide product-gallery__thumb">
+                <img src="img/catalog-item.png"
+                     alt="">
+              </div>
+              <div class="swiper-slide product-gallery__thumb">
+                <img src="img/catalog-item.png"
+                     alt="">
+              </div>
+              <div class="swiper-slide product-gallery__thumb">
+                <img src="img/catalog-item.png"
+                     alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <form class="product-meta">
+          <h1 class="product-meta__title">Ремень Congnac</h1>
+          <section class="product-params product-params--color">
+            <h2 class="alt-font product-params__title">Выберите цвет</h2>
+            <ul class="alt-font product-params__list">
+              @include('color-item.html', {name: 'Черный', file: 1, checked: true})
+              @include('color-item.html', {name: 'Шоколад', file: 2})
+              @include('color-item.html', {name: 'Синий', file: 3})
+              @include('color-item.html', {name: 'Коричневый', file: 4})
+              @include('color-item.html', {name: 'Коньячный', file: 5})
+            </ul>
+          </section>
+          <section class="product-params">
+            <h2 class="alt-font product-params__title">Выберите размер</h2>
+            <ul class="alt-font product-params__list">
+              @include('size-item.html', {size: '100', checked: true})
+              @include('size-item.html', {size: '105'})
+              @include('size-item.html', {size: '110'})
+              @include('size-item.html', {size: '115'})
+              @include('size-item.html', {size: '120'})
+              @include('size-item.html', {size: '130'})
+            </ul>
+          </section>
+          <section class="product-params">
+            <h2 class="alt-font product-params__title">Добавьте инициалы <span class="product-params__title-note"
+                    data-price-value>200</span></h2>
+            <div class="product-params__text-field">
+              <input class="form-input"
+                     type="text"
+                     name="Инициалы"
+                     placeholder="Иванов И.И.">
+            </div>
+          </section>
+          <div class="product-meta__price">
+            <ins>
+              <span class="product-meta__price-val product-meta__price-val--main"
+                    data-price-value>2190</span>
+            </ins>
+            <del>
+              <span class="product-meta__price-val"
+                    data-price-value>3190</span>
+            </del>
+          </div>
+          <button class="btn btn--dark mt-3 product-meta__btn"
+                  type="submit">Купить</button>
+        </form>
+      </div>
+      <div class="col-12 col-lg-9 mb-5">
+        <section class="product-descr">
+          <h2 class="product-descr__title">Характеристики</h2>
+          <div class="product-descr__content">
+            <ul>
+              <li>Цвет: коньячный</li>
+              <li>Материал: натуральная кожа, цельной кусок из спинной части шкуры</li>
+              <li>Фурнитура: металлическая</li>
+              <li>Размеры: ширина 3,8 см, длина до 140 см</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="col-12 col-lg-9">
+        <section class="product-descr">
+          <h2 class="product-descr__title">Описание</h2>
+          <div class="product-descr__content">
+            <p>Кожаный пояс – неотъемлемый элемент стиля как в повседневном, так и в классическом образе.</p>
+            <p>Аксессуар оснащен прочной литой пряжкой, а его надежное крепление на трех латунных винтах позволяет вам легко подогнать длину ремня под свои предпочтения. В производстве используется натуральная кожа класса люкс, подвергнутая уникальной технологии обработки (Double Face). Изнаночная сторона изделия также тщательно обработана, обеспечивая исключительную гладкость.</p>
+            <p>Ремни из коллекции "Pull up" обладают эффектом "быстрого состаривания", приобретая привлекательную и интересную текстуру при деформации.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,42 @@
+<header class="site__header site-header">
+  <div class="container">
+    <div class="site-header__row">
+      <div class="site-header__logo">
+        <a href="page-main.html">
+          <img src="img/logo.png"
+               alt="">
+        </a>
+      </div>
+      <div class="site-header__menu">
+        @include('menu.html')
+      </div>
+      <div class="cart">
+        <a class="cart__link"
+           href="page-cart.html">
+          <span>Корзина</span>
+          <svg width="26"
+               height="26"
+               aria-hidden="true">
+            <use xlink:href="img/sprite.svg#icon-cart"></use>
+          </svg>
+        </a>
+        <span class="alt-font cart__counter">
+          <span class="visually-hidden">В корзине</span> <span>0</span> <span class="visually-hidden">товаров</span>
+        </span>
+      </div>
+      <div class="site-header__burger">
+        <button class="header-burger"
+                type="button"
+                aria-label="Меню">
+          <span class="header-burger__line header-burger__line--short"
+                aria-hidden="true"></span>
+          <span class="header-burger__line"
+                aria-hidden="true"></span>
+          <span class="header-burger__line header-burger__line--short"
+                aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  @include('modal.html')
+</header>

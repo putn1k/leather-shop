@@ -1,0 +1,21 @@
+:root {
+  --white: #FFFFFF;
+  --black: #2d2d2d;
+  --gray: #E5E5E5;
+  --red: #FD3737;
+  --green: #49AE5E;
+
+  // theme vars
+  --primary-color: var(--black);
+  --secondary-color: var(--white);
+  --accent-color: var(--gray);
+  --warning-color: var(--red);
+  --good-color: var(--green);
+}
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$main-font: "Lora";
+$alt-font: "Open Sans";

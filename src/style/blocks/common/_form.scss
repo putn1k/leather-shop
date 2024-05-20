@@ -1,0 +1,64 @@
+.form-input {
+  font-size: 16px;
+  font-family: $alt-font, Arial, Helvetica, sans-serif;
+  padding: 12px 26px;
+  width: 100%;
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  border: none;
+  appearance: none;
+  border-radius: 5px;
+
+  &--area {
+    resize: none;
+    height: 6em;
+  }
+}
+
+%form-radio-base {
+  @include visually-hidden;
+
+  &+span {
+    display: inline-block;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  &:checked+span {
+    outline: 1px solid var(--primary-color);
+    outline-offset: 2px;
+  }
+}
+
+.form-radio-color {
+  @extend %form-radio-base;
+
+  &+span {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    & img {
+      @include full-size;
+    }
+  }
+}
+
+.form-radio-text {
+  @extend %form-radio-base;
+
+  &+span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}

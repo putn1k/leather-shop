@@ -1,0 +1,70 @@
+.header-modal {
+  pointer-events: none;
+  background-color: transparent;
+  transition: background-color .2s ease-in-out;
+
+  &[aria-hidden="false"] {
+    --display-content: block;
+    --display-btn: inline-flex;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__content {
+    @include anim(slide-right, .2s);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: var(--display-content, none);
+    width: 100%;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 60px 15px 30px;
+  }
+
+  &__close {
+    @include btn-reset;
+
+    position: fixed;
+    left: 15px;
+    top: 20px;
+    display: var(--display-btn, none);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__scroll-content {
+    height: 100%;
+    overflow: auto;
+  }
+
+  &__menu {
+    display: grid;
+    row-gap: 30px;
+  }
+
+  @include media-min ($sm) {
+    &__content {
+      width: 75%;
+      left: auto;
+    }
+  }
+
+  @include media-min ($lg) {
+    display: none;
+  }
+}

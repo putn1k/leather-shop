@@ -1,0 +1,51 @@
+.site-header {
+  padding: 5px 0;
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    margin-right: auto;
+
+    & img {
+      max-width: 180px;
+    }
+  }
+
+  &__menu {
+    display: none;
+  }
+
+  &__burger {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  @include media-min ($lg) {
+    position: relative;
+    padding-bottom: 45px;
+
+    &__logo {
+      margin-right: 0;
+
+      & img {
+        max-width: 245px;
+      }
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      margin: 0 20px;
+    }
+
+    &__burger {
+      display: none;
+    }
+  }
+}

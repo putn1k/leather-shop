@@ -1,0 +1,38 @@
+.slider {
+  --swiper-pagination-bullet-size: 6px;
+  --swiper-theme-color: var(--primary-color);
+
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+
+  &:not(.swiper-initialized) {
+    opacity: 0;
+  }
+
+  &__wrapper {
+    box-sizing: border-box;
+  }
+
+  &__pagination {
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  & .swiper-pagination-bullet {
+    transition: transform .2s ease-in-out, background-color .2s ease-in-out;
+  }
+
+  & .swiper-pagination-bullet-active {
+    transform: scale(1.4);
+  }
+}
+
+.slider-controls-btn {
+  display: inline-flex;
+  border-radius: 50%;
+  pointer-events: auto;
+  overflow: hidden;
+}

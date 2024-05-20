@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @include('html/head/index.html')
+  <title>Заказы</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true"
+       id="site-top"></div>
+  <div class="site__container">
+    @include('html/header/index.html')
+    <div class="site__content">
+      <main>
+        <div class="admin-registry">
+          <div class="container">
+            <div class="admin-registry__table">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--id">ID</th>
+                    <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--name">Название</th>
+                    <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--img">Фото</th>
+                    <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--color">Цвет</th>
+                    <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--size">Размер</th>
+                    <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--params">Характеристики</th>
+                    <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--descr">Описание</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="admin-registry__cell admin-registry__cell--id">
+                      12
+                    </td>
+                    <td class="admin-registry__cell admin-registry__cell--name">
+                      Ремень Congnac
+                    </td>
+                    <td class="admin-registry__cell admin-registry__cell--img">
+                      <img src="img/catalog-item.png"
+                           alt="">
+                    </td>
+                    <td class="admin-registry__cell admin-registry__cell--color">
+                      <img src="img/colors/5.png"
+                           alt="">
+                    </td>
+                    <td class="admin-registry__cell admin-registry__cell--size">
+                      120
+                    </td>
+                    <td class="admin-registry__cell admin-registry__cell--params">
+                      <ul>
+                        <li>Цвет: коньячный</li>
+                        <li>Материал: натуральная кожа, цельной кусок из спинной части шкуры</li>
+                        <li>Фурнитура: металлическая</li>
+                        <li>Размеры: ширина 3,8 см, длина до 140 см</li>
+                      </ul>
+                    </td>
+                    <td class="admin-registry__cell admin-registry__cell--descr">
+                      <p>Кожаный пояс – неотъемлемый элемент стиля как в повседневном, так и в классическом образе.</p>
+                      <p>Аксессуар оснащен прочной литой пряжкой, а его надежное крепление на трех латунных винтах позволяет вам легко подогнать длину ремня под свои предпочтения. В производстве используется натуральная кожа класса люкс, подвергнутая уникальной технологии обработки (Double Face). Изнаночная сторона изделия также тщательно обработана, обеспечивая исключительную гладкость.</p>
+                      <p>Ремни из коллекции "Pull up" обладают эффектом "быстрого состаривания", приобретая привлекательную и интересную текстуру при деформации.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="admin-registry__cell admin-registry__cell--id">
+                      12
+                    </td>
+                    <td class="admin-registry__cell admin-registry__cell--name">
+                      Ремень Congnac
+                    </td>
+                    <td class="admin-registry__cell admin-registry__cell--img">
+                      <img src="img/catalog-item.png"
+                           alt="">
+                    </td>
+                    <td class="admin-registry__cell admin-registry__cell--color">
+                      <img src="img/colors/5.png"
+                           alt="">
+                    </td>
+                    <td class="admin-registry__cell admin-registry__cell--size">
+                      120
+                    </td>
+                    <td class="admin-registry__cell admin-registry__cell--params">
+                      <ul>
+                        <li>Цвет: коньячный</li>
+                        <li>Материал: натуральная кожа, цельной кусок из спинной части шкуры</li>
+                        <li>Фурнитура: металлическая</li>
+                        <li>Размеры: ширина 3,8 см, длина до 140 см</li>
+                      </ul>
+                    </td>
+                    <td class="admin-registry__cell admin-registry__cell--descr">
+                      <p>Кожаный пояс – неотъемлемый элемент стиля как в повседневном, так и в классическом образе.</p>
+                      <p>Аксессуар оснащен прочной литой пряжкой, а его надежное крепление на трех латунных винтах позволяет вам легко подогнать длину ремня под свои предпочтения. В производстве используется натуральная кожа класса люкс, подвергнутая уникальной технологии обработки (Double Face). Изнаночная сторона изделия также тщательно обработана, обеспечивая исключительную гладкость.</p>
+                      <p>Ремни из коллекции "Pull up" обладают эффектом "быстрого состаривания", приобретая привлекательную и интересную текстуру при деформации.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    @include('html/footer/index.html')
+  </div>
+  @include('html/common/scripts.html')
+</body>
+
+</html>

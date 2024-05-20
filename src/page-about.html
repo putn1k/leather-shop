@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @include('html/head/index.html')
+  <title>О нас</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true"
+       id="site-top"></div>
+  <div class="site__container">
+    @include('html/header/index.html')
+    <div class="site__content">
+      @include('html/common/breadcrumbs.html', {title: 'О нас'})
+      <main>
+        <section class="about">
+          <div class="container">
+            <h1 class="about__title">О нашем магазине</h1>
+            <div class="alt-font about__content">
+              <p>Добро пожаловать в "The Leather & Co" – ваш уникальный уголок в мире стильных изделий из кожи! Наш магазин объединяет искусство ремесла, качество и страсть к созданию неповторимых товаров.
+                Мы гордимся тем, что предлагаем вам не просто продукты, а настоящие произведения искусства. Наши мастера с любовью и вниманием создают каждый предмет, стремясь донести к вам уникальность и изысканность наших изделий.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    @include('html/footer/index.html')
+  </div>
+  @include('html/common/scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+.breadcrumbs {
+  color: #898989;
+  background-color: transparent;
+
+  & a {
+    color: inherit;
+    text-decoration-color: transparent;
+  }
+
+  @include media-min ($lg) {
+    & a {
+      transition: color .2s ease-in-out, text-decoration-color .2s ease-in-out;
+
+      &:hover {
+        color: var(--primary-color);
+        text-decoration-color: var(--primary-color);
+      }
+    }
+  }
+}
