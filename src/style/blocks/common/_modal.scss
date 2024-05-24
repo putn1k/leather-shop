@@ -1,0 +1,76 @@
+.modal {
+  position: relative;
+  margin: 0 auto;
+  padding: 30px 15px;
+  width: 100%;
+  max-width: 344px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+
+  &__close {
+    @include btn-reset;
+
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    color: var(--primary-color);
+  }
+
+  &__checkout-ok {
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    padding-top: 70px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 55px;
+      height: 55px;
+      background-color: var(--good-color);
+      background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.5306 2.03057L5.5306 10.0306C5.46092 10.1005 5.37813 10.156 5.28696 10.1938C5.1958 10.2317 5.09806 10.2512 4.99935 10.2512C4.90064 10.2512 4.8029 10.2317 4.71173 10.1938C4.62057 10.156 4.53778 10.1005 4.4681 10.0306L0.968098 6.53057C0.898333 6.4608 0.842993 6.37798 0.805236 6.28683C0.76748 6.19568 0.748047 6.09798 0.748047 5.99932C0.748047 5.90066 0.76748 5.80296 0.805236 5.71181C0.842993 5.62066 0.898333 5.53783 0.968098 5.46807C1.03786 5.3983 1.12069 5.34296 1.21184 5.30521C1.30299 5.26745 1.40069 5.24802 1.49935 5.24802C1.59801 5.24802 1.69571 5.26745 1.78686 5.30521C1.87801 5.34296 1.96083 5.3983 2.0306 5.46807L4.99997 8.43744L12.4693 0.969318C12.6102 0.828422 12.8013 0.749268 13.0006 0.749268C13.1999 0.749268 13.391 0.828422 13.5318 0.969318C13.6727 1.11021 13.7519 1.30131 13.7519 1.50057C13.7519 1.69983 13.6727 1.89092 13.5318 2.03182L13.5306 2.03057Z' fill='white'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 36px 36px;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+  }
+
+  &__text {
+    @include crop-text;
+
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__submit {
+    width: 100%;
+  }
+
+  @include media-min ($md) {
+    max-width: 600px;
+    padding: 30px;
+
+    &__close {
+      top: 30px;
+      right: 30px;
+    }
+  }
+}
