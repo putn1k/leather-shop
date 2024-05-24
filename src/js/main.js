@@ -11,6 +11,10 @@ import {
 } from './modules/slider.js';
 
 import {
+  initModals,
+} from './modules/modal.js';
+
+import {
   initScrollTop,
 } from './modules/scroll-top.js';
 
@@ -24,6 +28,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
   window.addEventListener( 'load', () => {
     initHeaderMenu();
     initSliders();
+    initModals();
     initScrollTop();
     initGalleries();
   } );

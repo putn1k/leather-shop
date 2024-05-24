@@ -1,3 +1,19 @@
+.form-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    position: relative;
+    display: block;
+    font-family: $alt-font, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: var(--primary-color);
+    order: -1;
+    margin-bottom: 6px;
+  }
+}
+
 .form-input {
   font-size: 16px;
   font-family: $alt-font, Arial, Helvetica, sans-serif;

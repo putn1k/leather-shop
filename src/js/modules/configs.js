@@ -51,8 +51,16 @@ const observerConfig = {
   },
 };
 
+const modalConfig = {
+  linkAttributeName: false,
+  catchFocus: true,
+  closeOnEsc: true,
+  backscroll: true,
+};
+
 export {
   sliderConfig,
   smoothScrollConfig,
   observerConfig,
+  modalConfig
 };

@@ -47,8 +47,14 @@ const initSlider = ( name, options = {} ) => {
   return new Swiper( name, customConfig );
 };
 
+const initModal = ( name, handler = 'data-hystmodal' ) => {
+  name.config.linkAttributeName = handler;
+  name.init();
+};
+
 export {
   iosVhFix,
   isEscKey,
   initSlider,
+  initModal
 };

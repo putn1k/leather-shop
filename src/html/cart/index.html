@@ -4,8 +4,10 @@
     <div class="row">
       <div class="col-12 col-lg-8">
         <div class="cart-page__main">
-          <ul class="cart-page__list">
-            <li class="cart-item">
+          <ul class="cart-page__list"
+              id="order-list">
+            <li class="cart-item"
+                id="prod-1234">
               <div class="cart-item__img">
                 <img src="img/catalog-item.png"
                      alt="">
@@ -73,8 +75,9 @@
             </tbody>
           </table>
           <div class="cart-total__checkout">
-            <a class="btn btn--green"
-               href="#">Перейти к оформлению</a>
+            <button class="btn btn--green"
+                    type="button"
+                    data-hystmodal="#checkout-modal">Перейти к оформлению</button>
           </div>
           <p class="alt-font cart-total__note">Доступные способы доставки можно выбрать при оформлении заказа</p>
         </section>

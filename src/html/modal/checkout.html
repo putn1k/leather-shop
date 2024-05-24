@@ -1,0 +1,43 @@
+<h3 class="modal__title">Оформление заказа</h3>
+<form id="checkout-modal-form">
+  <input type="hidden"
+         name="Форма"
+         value="Заказать товар">
+  <input type="hidden"
+         name="Заказ"
+         data-order-meta
+         value="">
+  <div class="row">
+    <label class="col-12 mb-3 form-label">
+      <input class="form-input"
+             type="text"
+             name="Имя"
+             placeholder="Имя"
+             required>
+      <span class="form-label__text">Имя</span>
+    </label>
+    <label class="col-12 mb-3 form-label">
+      <input class="form-input"
+             type="tel"
+             name="Телефон"
+             placeholder="+7 000 000 00 00"
+             required>
+      <span class="form-label__text">Номер телефона</span>
+    </label>
+    <label class="col-12 mb-4 form-label">
+      <textarea class="form-input form-input--area"
+                name="Сообщение"
+                placeholder="Комментарий к заказу"></textarea>
+      <span class="form-label__text">Комментарий</span>
+    </label>
+    <div class="col-12 mb-3">
+      <button class="btn btn--dark modal__submit"
+              type="submit">
+        <span>Отправить</span>
+      </button>
+    </div>
+    <div class="col-12">
+      @include('../common/confirm-text.html')
+    </div>
+  </div>
+</form>
