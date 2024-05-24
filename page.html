@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/lora-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/lora-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Страница</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true" id="site-top"></div>
+  <div class="site__container">
+    <header class="site__header site-header">
+      <div class="container">
+        <div class="site-header__row">
+          <div class="site-header__logo">
+            <a href="page-main.html">
+              <img src="img/logo.png" alt="">
+            </a>
+          </div>
+          <div class="site-header__menu">
+            <div class="header-catalog">
+              <div class="header-catalog__trigger">
+                <button class="header-catalog__trigger-btn" type="button">
+                  Каталог
+                </button>
+              </div>
+              <ul class="header-catalog__menu header-menu">
+                <li>
+                  <a href="">SALE</a>
+                </li>
+                <li>
+                  <a href="">Весь каталог</a>
+                </li>
+                <li>
+                  <a href="">Кошельки</a>
+                </li>
+                <li>
+                  <a href="">Ремни</a>
+                </li>
+                <li>
+                  <a href="">Всё для документов</a>
+                </li>
+              </ul>
+            </div>
+            <nav class="header-nav">
+              <ul class="header-menu">
+                <li>
+                  <a href="page-novellties.html">Новинки</a>
+                </li>
+                <li>
+                  <a href="page-contacts.html">Контакты</a>
+                </li>
+                <li>
+                  <a href="page-about.html">О нас</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="cart">
+            <a class="cart__link" href="page-cart.html">
+              <span>Корзина</span>
+              <svg width="26" height="26" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+            </a>
+            <span class="alt-font cart__counter">
+              <span class="visually-hidden">В корзине</span> <span>0</span> <span class="visually-hidden">товаров</span>
+            </span>
+          </div>
+          <div class="site-header__burger">
+            <button class="header-burger" type="button" aria-label="Меню">
+              <span class="header-burger__line header-burger__line--short" aria-hidden="true"></span>
+              <span class="header-burger__line" aria-hidden="true"></span>
+              <span class="header-burger__line header-burger__line--short" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header-modal" aria-hidden="true">
+        <div class="header-modal__content">
+          <button class="header-modal__close" type="button" aria-label="Меню">
+            <svg width="24" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <div class="header-modal__scroll-content">
+            <div class="header-modal__menu">
+              <div class="header-catalog">
+                <div class="header-catalog__trigger">
+                  <button class="header-catalog__trigger-btn" type="button">
+                    Каталог
+                  </button>
+                </div>
+                <ul class="header-catalog__menu header-menu">
+                  <li>
+                    <a href="">SALE</a>
+                  </li>
+                  <li>
+                    <a href="">Весь каталог</a>
+                  </li>
+                  <li>
+                    <a href="">Кошельки</a>
+                  </li>
+                  <li>
+                    <a href="">Ремни</a>
+                  </li>
+                  <li>
+                    <a href="">Всё для документов</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="header-nav">
+                <ul class="header-menu">
+                  <li>
+                    <a href="page-novellties.html">Новинки</a>
+                  </li>
+                  <li>
+                    <a href="page-contacts.html">Контакты</a>
+                  </li>
+                  <li>
+                    <a href="page-about.html">О нас</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="site__content">
+      <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+        <div class="container">
+          <a href="page-main.html">Главная</a>&ensp;&#47;&ensp;<span class="current-item">Пример тестовой страницы</span>
+        </div>
+      </div>
+      <main>
+
+      </main>
+    </div>
+    <footer class="site__footer site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 mb-4 order-md-1">
+            <div class="site-footer__item">
+              <div class="site-footer__item-title">Клиентам</div>
+              <ul class="site-footer__list site-footer__list--text">
+                <li>
+                  <a href="page-about.html">О нас</a>
+                </li>
+                <li>
+                  <a href="#">Публичная оферта</a>
+                </li>
+                <li>
+                  <a href="#">Политика конфиденциальности</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4 order-md-3 order-lg-2">
+            <div class="site-footer__item">
+              <div class="site-footer__item-title">Способы оплаты</div>
+              <ul class="site-footer__list site-footer__list--icon">
+                <li>
+                  <img width="30" height="30" src="img/icon-sber.svg">
+                  <span class="visually-hidden">Оплата через sber</span>
+                </li>
+                <li>
+                  <img width="30" height="30" src="img/icon-sbp.svg">
+                  <span class="visually-hidden">Оплата через sbp</span>
+                </li>
+                <li>
+                  <img width="30" height="30" src="img/icon-yoomoney.svg">
+                  <span class="visually-hidden">Оплата через yoomoney</span>
+                </li>
+                <li>
+                  <img width="30" height="30" src="img/icon-qiwi.svg">
+                  <span class="visually-hidden">Оплата через qiwi</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4 order-md-4 order-lg-3">
+            <div class="site-footer__item">
+              <div class="site-footer__item-title">Мы в соц. сетях</div>
+              <ul class="site-footer__list site-footer__list--icon">
+                <li>
+                  <a href="#">
+                    <img width="30" height="30" src="img/icon-vk.svg">
+                    <span class="visually-hidden">Мы в ВК</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img width="30" height="30" src="img/icon-inst.svg">
+                    <span class="visually-hidden">Мы в Instagram</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img width="30" height="30" src="img/icon-tlg.svg">
+                    <span class="visually-hidden">Мы в Telegram</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img width="30" height="30" src="img/icon-ytube.svg">
+                    <span class="visually-hidden">Мы в YouTube</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mb-4 order-md-2 order-lg-4">
+            <div class="site-footer__item">
+              <div class="site-footer__item-title">Связаться с нами</div>
+              <ul class="site-footer__list site-footer__list--contacts site-footer__list--text">
+                <li>
+                  <a href="tel:88003596210">8-800-359-62-10</a>
+                  <div class="site-footer__list-note">звонок бесплатный по России</div>
+                </li>
+                <li>
+                  <a href="mailto:info@gold.ru">info@gold.ru</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 order-5">
+            <div class="site-footer__copyright">
+              <span>2014- 2024</span> <span>&copy; The Leather & Co — изделия из кожи ручной работы</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="scroll-top" id="scroll-top">
+      <a class="scroll-top__link" href="#site-top" aria-label="Наверх страницы">
+        <svg width="14" height="8" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#icon-up"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="checkout-ok-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="modal__close" type="button" aria-label="Close window" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <div class="modal__checkout-ok">
+              <h3 class="modal__title">Спасибо за заказ!</h3>
+              <div class="modal__text">
+                <p>Мы получили ваш заказ и уже начали его собирать!</p>
+                <p>Мы свяжемся с вами в ближайшее время и обсудим все детали.</p>
+              </div>
+              <button class="btn btn--green" data-hystclose>Отлично!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="checkout-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="modal__close" type="button" aria-label="Close window" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h3 class="modal__title">Оформление заказа</h3>
+            <form id="checkout-modal-form">
+              <input type="hidden" name="Форма" value="Заказать товар">
+              <input type="hidden" name="Заказ" data-order-meta value="">
+              <div class="row">
+                <label class="col-12 mb-3 form-label">
+                  <input class="form-input" type="text" name="Имя" placeholder="Имя" required>
+                  <span class="form-label__text">Имя</span>
+                </label>
+                <label class="col-12 mb-3 form-label">
+                  <input class="form-input" type="tel" name="Телефон" placeholder="+7 000 000 00 00" required>
+                  <span class="form-label__text">Номер телефона</span>
+                </label>
+                <label class="col-12 mb-4 form-label">
+                  <textarea class="form-input form-input--area" name="Сообщение" placeholder="Комментарий к заказу"></textarea>
+                  <span class="form-label__text">Комментарий</span>
+                </label>
+                <div class="col-12 mb-3">
+                  <button class="btn btn--dark modal__submit" type="submit">
+                    <span>Отправить</span>
+                  </button>
+                </div>
+                <div class="col-12">
+                  <label class="form-checkbox">
+                    <input type="checkbox" required>
+                    <span>Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a></span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor-bundle.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
