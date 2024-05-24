@@ -94,16 +94,6 @@
     row-gap: 10px;
   }
 
-  &__footer {
-    padding-top: 20px;
-    border-top: 1px solid var(--accent-color);
-  }
-
-  &__coupon {
-    display: grid;
-    row-gap: 5px;
-  }
-
   &__clear {
     text-align: right;
   }
@@ -112,22 +102,6 @@
     @include btn-reset;
 
     opacity: 0.7;
-  }
-
-  @include media-min ($md) {
-    &__coupon {
-      display: flex;
-      row-gap: 0;
-
-      & input {
-        flex-grow: 1;
-      }
-
-      & button {
-        flex-shrink: 0;
-        margin-left: 5px;
-      }
-    }
   }
 
   @include media-min ($lg) {
