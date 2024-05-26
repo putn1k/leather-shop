@@ -47,6 +47,13 @@ const initSlider = ( name, options = {} ) => {
   return new Swiper( name, customConfig );
 };
 
+const initTabs = ( name ) => {
+  const tabsElement = document.querySelector( `[data-jtabs="${name}"]` );
+  if ( !tabsElement || !name ) return;
+
+  return new JustTabs( name );
+};
+
 const initModal = ( name, handler = 'data-hystmodal' ) => {
   name.config.linkAttributeName = handler;
   name.init();
@@ -56,5 +63,6 @@ export {
   iosVhFix,
   isEscKey,
   initSlider,
-  initModal
+  initModal,
+  initTabs
 };

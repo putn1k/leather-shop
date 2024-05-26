@@ -1,0 +1,98 @@
+.admin-registry {
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  &__cell {
+    padding: 10px;
+    text-align: left;
+    background-color: var(--accent-color);
+    border: 1px solid #bfbfbf;
+    font-family: $alt-font, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    vertical-align: top;
+
+    &--head {
+      font-weight: 600;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+
+    &--id {
+      width: 100px;
+    }
+
+    &--title {
+      width: auto;
+
+      &>div {
+        display: flex;
+        align-items: center;
+      }
+
+      & img {
+        width: 1em;
+        height: 1em;
+        margin-right: 0.65em;
+      }
+
+      & span {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &--actions {
+      width: 100px;
+    }
+
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__action-btn {
+    @include btn-reset;
+
+    width: 20px;
+    height: 20px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    & svg {
+      pointer-events: none;
+    }
+  }
+
+  &__service {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px 0;
+  }
+
+  &__nav {
+    padding: 10px 0;
+  }
+
+  @include media-min ($md) {
+    &__service {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &__nav {
+      padding: 0;
+      margin-right: auto;
+    }
+  }
+}

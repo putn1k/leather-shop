@@ -1,0 +1,33 @@
+<div class="admin-page">
+  <div class="container">
+    <div data-jtabs="admin-tabs">
+      <div class="admin-page__tabs-nav"
+           data-jtabs="nav">
+        <button class="admin-page__tabs-btn"
+                type="button"
+                data-jtabs="control">Категории</button>
+        <button class="admin-page__tabs-btn"
+                type="button"
+                data-jtabs="control">Метки</button>
+        <button class="admin-page__tabs-btn"
+                type="button"
+                data-jtabs="control">Размеры</button>
+        <button class="admin-page__tabs-btn"
+                type="button"
+                data-jtabs="control">Цвета</button>
+      </div>
+      <div data-jtabs="panel">
+        @include('categories.html')
+      </div>
+      <div data-jtabs="panel">
+        @include('tags.html')
+      </div>
+      <div data-jtabs="panel">
+        @include('sizes.html')
+      </div>
+      <div data-jtabs="panel">
+        @include('colors.html')
+      </div>
+    </div>
+  </div>
+</div>

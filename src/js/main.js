@@ -9,6 +9,9 @@ import {
 import {
   initSliders,
 } from './modules/slider.js';
+import {
+  initAllTabs,
+} from './modules/tabs.js';
 
 import {
   initModals,
@@ -29,6 +32,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
     initHeaderMenu();
     initSliders();
     initModals();
+    initAllTabs();
     initScrollTop();
     initGalleries();
   } );

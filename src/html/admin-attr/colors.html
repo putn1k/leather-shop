@@ -1,0 +1,66 @@
+<div class="admin-registry">
+  <table class="admin-registry__table">
+    <thead>
+      <tr>
+        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--id">ID</th>
+        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--title">Название</th>
+        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--actions">Действия</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="admin-registry__cell admin-registry__cell--id">
+          clr-1
+        </td>
+        <td class="admin-registry__cell admin-registry__cell--title">
+          <div>
+            <img src="img/colors/1.png"
+                 alt="">
+            <span>Черный</span>
+          </div>
+        </td>
+        <td class="admin-registry__cell admin-registry__cell--actions">
+          <div class="admin-registry__actions">
+            @include('../common/admin-edit-btn.html', {name: 'Редактировать цвет', modalSelector:'#color-field-modal', meta: 'clr', title: 'Черный', id: 'clr-1'})
+            <button class="admin-registry__action-btn admin-registry__action-btn--delete"
+                    type="button">
+              <svg width="20"
+                   height="20"
+                   aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-trash"></use>
+              </svg>
+            </button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="admin-registry__cell admin-registry__cell--id">
+          clr-4
+        </td>
+        <td class="admin-registry__cell admin-registry__cell--title">
+          <div>
+            <img src="img/colors/4.png"
+                 alt="">
+            <span>Корчневый</span>
+          </div>
+        </td>
+        <td class="admin-registry__cell admin-registry__cell--actions">
+          <div class="admin-registry__actions">
+            @include('../common/admin-edit-btn.html', {name: 'Редактировать цвет', modalSelector:'#color-field-modal', meta: 'clr', title: 'Корчневый', id: 'clr-4'})
+            <button class="admin-registry__action-btn admin-registry__action-btn--delete"
+                    type="button">
+              <svg width="20"
+                   height="20"
+                   aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-trash"></use>
+              </svg>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="admin-registry__service">
+    @include('../common/admin-add-btn.html', {name: 'Добавить цвет', modalSelector:'#color-field-modal', meta: 'clr'})
+  </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="admin-registry">
+  <table class="admin-registry__table">
+    <thead>
+      <tr>
+        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--id">ID</th>
+        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--title">Название</th>
+        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--actions">Действия</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="admin-registry__cell admin-registry__cell--id">
+          cat-1
+        </td>
+        <td class="admin-registry__cell admin-registry__cell--title">
+          <div>
+            <span>Ремни</span>
+          </div>
+        </td>
+        <td class="admin-registry__cell admin-registry__cell--actions">
+          <div class="admin-registry__actions">
+            @include('../common/admin-edit-btn.html', {name: 'Редактировать категорию', modalSelector:'#text-field-modal', meta: 'cat', title: 'Ремни', id: 'cat-1'})
+            <button class="admin-registry__action-btn admin-registry__action-btn--delete"
+                    type="button">
+              <svg width="20"
+                   height="20"
+                   aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-trash"></use>
+              </svg>
+            </button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="admin-registry__cell admin-registry__cell--id">
+          cat-2
+        </td>
+        <td class="admin-registry__cell admin-registry__cell--title">
+          <div>
+            <span>Кошельки</span>
+          </div>
+        </td>
+        <td class="admin-registry__cell admin-registry__cell--actions">
+          <div class="admin-registry__actions">
+            @include('../common/admin-edit-btn.html', {name: 'Редактировать категорию', modalSelector:'#text-field-modal', meta: 'cat', title: 'Кошельки', id: 'cat-2'})
+            <button class="admin-registry__action-btn admin-registry__action-btn--delete"
+                    type="button">
+              <svg width="20"
+                   height="20"
+                   aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-trash"></use>
+              </svg>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="admin-registry__service">
+    @include('../common/admin-add-btn.html', {name: 'Добавить категорию', modalSelector:'#text-field-modal', meta: 'cat'})
+  </div>
+</div>

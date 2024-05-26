@@ -1,0 +1,83 @@
+<h3 class="modal__title"></h3>
+<form id="admin-product-form">
+  <input type="hidden"
+         name="form"
+         value="add-product">
+  <div class="row">
+    <label class="col-12 col-md-8 mb-3 form-label">
+      <input class="form-input"
+             type="text"
+             name="title"
+             placeholder="Название"
+             required>
+      <span class="form-label__text">Название</span>
+    </label>
+    <label class="col-12 col-md-4 mb-3 form-label">
+      <input class="form-input"
+             type="text"
+             name="price"
+             placeholder="Цена"
+             required>
+      <span class="form-label__text">Цена</span>
+    </label>
+    <label class="col-12 mb-3 form-label">
+      <input class="form-input"
+             type="file"
+             name="photos[]"
+             multiple>
+      <span class="form-label__text">Фотографии</span>
+    </label>
+    <label class="col-12 col-md-4 mb-3 form-label">
+      <select class="form-input form-input--select"
+              name="cat">
+        <option disabled
+                selected
+                value>Выбрать</option>
+        <option value="cat-1">Ремни</option>
+        <option value="cat-2">Кошельки</option>
+      </select>
+      <span class="form-label__text">Категория</span>
+    </label>
+    <label class="col-12 col-md-4 mb-3 form-label">
+      <select class="form-input form-input--select"
+              name="clr">
+        <option disabled
+                selected
+                value>Выбрать</option>
+        <option value="clr-1">Черный</option>
+        <option value="clr-2">Синий</option>
+        <option value="clr-4">Коричневый</option>
+      </select>
+      <span class="form-label__text">Цвет</span>
+    </label>
+    <label class="col-12 col-md-4 mb-3 form-label">
+      <select class="form-input form-input--select"
+              name="sz">
+        <option disabled
+                selected
+                value>Выбрать</option>
+        <option value="sz-1">100</option>
+        <option value="sz-2">110</option>
+      </select>
+      <span class="form-label__text">Размер</span>
+    </label>
+    <label class="col-12 mb-3 form-label">
+      <textarea class="form-input form-input--area"
+                name="descr"
+                placeholder="Описание"></textarea>
+      <span class="form-label__text">Описание</span>
+    </label>
+    <label class="col-12 mb-4 form-label">
+      <textarea class="form-input form-input--area"
+                name="params"
+                placeholder="Характеристики"></textarea>
+      <span class="form-label__text">Характеристики</span>
+    </label>
+    <div class="col-12 mb-3">
+      <button class="btn btn--dark modal__submit"
+              type="submit">
+        <span>OK</span>
+      </button>
+    </div>
+  </div>
+</form>

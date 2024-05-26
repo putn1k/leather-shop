@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  &__btn {
+    padding: 5px 10px;
+    flex-shrink: 0;
+  }
+
+  &__numbers-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__page-numbers {
+    font-family: $alt-font, Arial, Helvetica, sans-serif;
+    margin: 0 4px;
+    padding: 5px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+
+    &--current {
+      background-color: var(--accent-color);
+    }
+  }
+
+  &__dots {
+    color: var(--primary-color);
+  }
+}

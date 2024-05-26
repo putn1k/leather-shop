@@ -1,0 +1,22 @@
+<button class="admin-registry__action-btn admin-registry__action-btn--edit"
+        type="button"
+        title="@name"
+        data-admin-modal="@modalSelector"
+        @if(context.meta)
+        {
+        data-meta="@meta"
+        }
+        @if(context.title)
+        {
+        data-title="@title"
+        }
+        @if(context.id)
+        {
+        data-id-field="@id"
+        }>
+  <svg width="20"
+       height="20"
+       aria-hidden="true">
+    <use xlink:href="img/sprite.svg#icon-edit"></use>
+  </svg>
+</button>

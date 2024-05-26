@@ -1,0 +1,33 @@
+.admin-page {
+  padding: 20px 0 60px;
+
+  &__tabs-nav {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  &__tabs-btn {
+    @include btn-reset;
+
+    font-family: $alt-font, Arial, Helvetica, sans-serif;
+    display: inline-flex;
+    padding: 10px 15px;
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+
+    &.is-selected {
+      color: var(--secondary-color);
+      background-color: var(--primary-color);
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid #bfbfbf;
+    }
+  }
+
+  @include media-min ($md) {
+    &__tabs-nav {
+      overflow-x: visible;
+    }
+  }
+}

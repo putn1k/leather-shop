@@ -1,2 +1,10 @@
+@if(!context.isAdmin) {
 @include('template.html', {id: 'checkout-ok-modal', template: 'checkout-ok'})
 @include('template.html', {id: 'checkout-modal', template: 'checkout'})
+}
+
+@if(context.isAdmin) {
+@include('template-admin.html', {id: 'text-field-modal', template: 'text-field'})
+@include('template-admin.html', {id: 'color-field-modal', template: 'color-field'})
+@include('template-admin.html', {id: 'product-modal', template: 'product'})
+}
