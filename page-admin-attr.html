@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/lora-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/lora-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Административная панель</title>
+</head>
+
+<body class="indent-reset site">
+  <div class="site__container">
+    <div class="container">
+      <h1>Административная панель</h1>
+      <h2>Атрибуты</h2>
+    </div>
+    <div class="site__content">
+      <main>
+        <div class="admin-page">
+          <div class="container">
+            <div data-jtabs="admin-tabs">
+              <div class="admin-page__tabs-nav" data-jtabs="nav">
+                <button class="admin-page__tabs-btn" type="button" data-jtabs="control">Категории</button>
+                <button class="admin-page__tabs-btn" type="button" data-jtabs="control">Метки</button>
+                <button class="admin-page__tabs-btn" type="button" data-jtabs="control">Размеры</button>
+                <button class="admin-page__tabs-btn" type="button" data-jtabs="control">Цвета</button>
+              </div>
+              <div data-jtabs="panel">
+                <div class="admin-registry">
+                  <table class="admin-registry__table">
+                    <thead>
+                      <tr>
+                        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--id">ID</th>
+                        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--title">Название</th>
+                        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--actions">Действия</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="admin-registry__cell admin-registry__cell--id">
+                          cat-1
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--title">
+                          <div>
+                            <span>Ремни</span>
+                          </div>
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--actions">
+                          <div class="admin-registry__actions">
+                            <button class="admin-registry__action-btn admin-registry__action-btn--edit" type="button" title="Редактировать категорию" data-admin-modal="#text-field-modal" data-meta="cat" data-title="Ремни" data-id-field="cat-1">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-edit"></use>
+                              </svg>
+                            </button>
+                            <button class="admin-registry__action-btn admin-registry__action-btn--delete" type="button">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="admin-registry__cell admin-registry__cell--id">
+                          cat-2
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--title">
+                          <div>
+                            <span>Кошельки</span>
+                          </div>
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--actions">
+                          <div class="admin-registry__actions">
+                            <button class="admin-registry__action-btn admin-registry__action-btn--edit" type="button" title="Редактировать категорию" data-admin-modal="#text-field-modal" data-meta="cat" data-title="Кошельки" data-id-field="cat-2">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-edit"></use>
+                              </svg>
+                            </button>
+                            <button class="admin-registry__action-btn admin-registry__action-btn--delete" type="button">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="admin-registry__service">
+                    <button class="btn btn--dark" type="button" data-admin-modal="#text-field-modal" data-meta="cat">Добавить категорию</button>
+                  </div>
+                </div>
+              </div>
+              <div data-jtabs="panel">
+                <div class="admin-registry">
+                  <table class="admin-registry__table">
+                    <thead>
+                      <tr>
+                        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--id">ID</th>
+                        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--title">Название</th>
+                        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--actions">Действия</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="admin-registry__cell admin-registry__cell--id">
+                          tag-1
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--title">
+                          <div>
+                            <span>Новинки</span>
+                          </div>
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--actions">
+                          <div class="admin-registry__actions">
+                            <button class="admin-registry__action-btn admin-registry__action-btn--edit" type="button" title="Редактировать метку" data-admin-modal="#text-field-modal" data-meta="tag" data-title="Новинки" data-id-field="tag-1">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-edit"></use>
+                              </svg>
+                            </button>
+                            <button class="admin-registry__action-btn admin-registry__action-btn--delete" type="button">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="admin-registry__cell admin-registry__cell--id">
+                          tag-2
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--title">
+                          <div>
+                            <span>Распродажа</span>
+                          </div>
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--actions">
+                          <div class="admin-registry__actions">
+                            <button class="admin-registry__action-btn admin-registry__action-btn--edit" type="button" title="Редактировать метку" data-admin-modal="#text-field-modal" data-meta="tag" data-title="Распродажа" data-id-field="tag-2">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-edit"></use>
+                              </svg>
+                            </button>
+                            <button class="admin-registry__action-btn admin-registry__action-btn--delete" type="button">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="admin-registry__service">
+                    <button class="btn btn--dark" type="button" data-admin-modal="#text-field-modal" data-meta="tag">Добавить метку</button>
+                  </div>
+                </div>
+              </div>
+              <div data-jtabs="panel">
+                <div class="admin-registry">
+                  <table class="admin-registry__table">
+                    <thead>
+                      <tr>
+                        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--id">ID</th>
+                        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--title">Название</th>
+                        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--actions">Действия</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="admin-registry__cell admin-registry__cell--id">
+                          sz-1
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--title">
+                          <div>
+                            <span>100</span>
+                          </div>
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--actions">
+                          <div class="admin-registry__actions">
+                            <button class="admin-registry__action-btn admin-registry__action-btn--edit" type="button" title="Редактировать размер" data-admin-modal="#text-field-modal" data-meta="sz" data-title="100" data-id-field="sz-2">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-edit"></use>
+                              </svg>
+                            </button>
+                            <button class="admin-registry__action-btn admin-registry__action-btn--delete" type="button">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="admin-registry__cell admin-registry__cell--id">
+                          sz-2
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--title">
+                          <div>
+                            <span>110</span>
+                          </div>
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--actions">
+                          <div class="admin-registry__actions">
+                            <button class="admin-registry__action-btn admin-registry__action-btn--edit" type="button" title="Редактировать размер" data-admin-modal="#text-field-modal" data-meta="sz" data-title="110" data-id-field="sz-2">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-edit"></use>
+                              </svg>
+                            </button>
+                            <button class="admin-registry__action-btn admin-registry__action-btn--delete" type="button">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="admin-registry__service">
+                    <button class="btn btn--dark" type="button" data-admin-modal="#text-field-modal" data-meta="sz">Добавить размер</button>
+                  </div>
+                </div>
+              </div>
+              <div data-jtabs="panel">
+                <div class="admin-registry">
+                  <table class="admin-registry__table">
+                    <thead>
+                      <tr>
+                        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--id">ID</th>
+                        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--title">Название</th>
+                        <th class="admin-registry__cell admin-registry__cell--head admin-registry__cell--actions">Действия</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="admin-registry__cell admin-registry__cell--id">
+                          clr-1
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--title">
+                          <div>
+                            <img src="img/colors/1.png" alt="">
+                            <span>Черный</span>
+                          </div>
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--actions">
+                          <div class="admin-registry__actions">
+                            <button class="admin-registry__action-btn admin-registry__action-btn--edit" type="button" title="Редактировать цвет" data-admin-modal="#color-field-modal" data-meta="clr" data-title="Черный" data-id-field="clr-1">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-edit"></use>
+                              </svg>
+                            </button>
+                            <button class="admin-registry__action-btn admin-registry__action-btn--delete" type="button">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="admin-registry__cell admin-registry__cell--id">
+                          clr-4
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--title">
+                          <div>
+                            <img src="img/colors/4.png" alt="">
+                            <span>Корчневый</span>
+                          </div>
+                        </td>
+                        <td class="admin-registry__cell admin-registry__cell--actions">
+                          <div class="admin-registry__actions">
+                            <button class="admin-registry__action-btn admin-registry__action-btn--edit" type="button" title="Редактировать цвет" data-admin-modal="#color-field-modal" data-meta="clr" data-title="Корчневый" data-id-field="clr-4">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-edit"></use>
+                              </svg>
+                            </button>
+                            <button class="admin-registry__action-btn admin-registry__action-btn--delete" type="button">
+                              <svg width="20" height="20" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#icon-trash"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="admin-registry__service">
+                    <button class="btn btn--dark" type="button" data-admin-modal="#color-field-modal" data-meta="clr">Добавить цвет</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+
+
+    <div class="hystmodal hystmodal--simple" id="text-field-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="modal__close" type="button" aria-label="Close window" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h3 class="modal__title"></h3>
+            <form id="admin-text-form">
+              <input type="hidden" name="meta">
+              <input type="hidden" name="id">
+              <div class="row">
+                <label class="col-12 mb-3 form-label">
+                  <input class="form-input" type="text" name="title" placeholder="Название" required>
+                  <span class="form-label__text">Название</span>
+                </label>
+                <div class="col-12 mb-3">
+                  <button class="btn btn--dark modal__submit" type="submit">
+                    <span>OK</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="color-field-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="modal__close" type="button" aria-label="Close window" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h3 class="modal__title"></h3>
+            <form id="admin-color-form">
+              <input type="hidden" name="meta">
+              <input type="hidden" name="id">
+              <div class="row">
+                <label class="col-12 mb-3 form-label">
+                  <input class="form-input" type="text" name="title" placeholder="Название" required>
+                  <span class="form-label__text">Название</span>
+                </label>
+                <label class="col-12 mb-3 form-label">
+                  <input class="form-input" type="file" name="color" required>
+                  <span class="form-label__text">Цвет</span>
+                </label>
+                <div class="col-12 mb-3">
+                  <button class="btn btn--dark modal__submit" type="submit">
+                    <span>OK</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="product-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="modal__close" type="button" aria-label="Close window" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h3 class="modal__title"></h3>
+            <form id="admin-product-form">
+              <input type="hidden" name="form" value="add-product">
+              <div class="row">
+                <label class="col-12 col-md-8 mb-3 form-label">
+                  <input class="form-input" type="text" name="title" placeholder="Название" required>
+                  <span class="form-label__text">Название</span>
+                </label>
+                <label class="col-12 col-md-4 mb-3 form-label">
+                  <input class="form-input" type="text" name="price" placeholder="Цена" required>
+                  <span class="form-label__text">Цена</span>
+                </label>
+                <label class="col-12 mb-3 form-label">
+                  <input class="form-input" type="file" name="photos[]" multiple>
+                  <span class="form-label__text">Фотографии</span>
+                </label>
+                <label class="col-12 col-md-4 mb-3 form-label">
+                  <select class="form-input form-input--select" name="cat">
+                    <option disabled selected value>Выбрать</option>
+                    <option value="cat-1">Ремни</option>
+                    <option value="cat-2">Кошельки</option>
+                  </select>
+                  <span class="form-label__text">Категория</span>
+                </label>
+                <label class="col-12 col-md-4 mb-3 form-label">
+                  <select class="form-input form-input--select" name="clr">
+                    <option disabled selected value>Выбрать</option>
+                    <option value="clr-1">Черный</option>
+                    <option value="clr-2">Синий</option>
+                    <option value="clr-4">Коричневый</option>
+                  </select>
+                  <span class="form-label__text">Цвет</span>
+                </label>
+                <label class="col-12 col-md-4 mb-3 form-label">
+                  <select class="form-input form-input--select" name="sz">
+                    <option disabled selected value>Выбрать</option>
+                    <option value="sz-1">100</option>
+                    <option value="sz-2">110</option>
+                  </select>
+                  <span class="form-label__text">Размер</span>
+                </label>
+                <label class="col-12 mb-3 form-label">
+                  <textarea class="form-input form-input--area" name="descr" placeholder="Описание"></textarea>
+                  <span class="form-label__text">Описание</span>
+                </label>
+                <label class="col-12 mb-4 form-label">
+                  <textarea class="form-input form-input--area" name="params" placeholder="Характеристики"></textarea>
+                  <span class="form-label__text">Характеристики</span>
+                </label>
+                <div class="col-12 mb-3">
+                  <button class="btn btn--dark modal__submit" type="submit">
+                    <span>OK</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="js/vendor-bundle.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
